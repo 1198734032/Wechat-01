@@ -1,0 +1,35 @@
+/* pages/main/main.wxss */
+.banner{
+  padding:30rpx  30rpx;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap:wrap
+}
+.banner image{
+  width: 130rpx;
+  height: 150rpx;
+  padding: 25rpx 0;
+}
+#course image{
+  padding: 0 10rpx 10rpx 30rpx;
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align:middle;
+}
+#course{
+  font-size: 30rpx;
+}
+.detail:nth-child(1){
+  border-top: 1px solid #eeeded;
+}
+#today{
+  border-bottom: 1px solid #eeeded;
+}
+.detail{
+  padding:20rpx 30rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eeeded;
+  font-size: 35rpx;
+  color: #c0bebe;
+}

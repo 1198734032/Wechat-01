@@ -1,0 +1,29 @@
+/* pages/card/card.wxss */
+#top-pic{
+  width: 100%;
+  height: 300rpx;
+}
+input{
+  display: inline-block;
+  width:350rpx
+}
+#body{
+  color:#868585;
+  padding:50rpx
+}
+.inform{
+  padding:30rpx 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dad4d4;
+}
+.pick{
+  background: transparent;
+  border: none;
+}
+#sub{
+  margin-top: 50rpx;
+  width: 500rpx;
+  border: none;
+  background-color: #75eea7;
+}
