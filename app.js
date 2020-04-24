@@ -9,8 +9,28 @@ App({
     // 登录
     wx.login({
       success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-      }
+       // 发送 res.code 到后台换取 openId, sessionKey, unionId
+              console.log(res)
+              if (res.code) {
+                //发起网络请求
+                wx.request({
+                  url:'http://127.0.0.1:3000/test',
+                  data: {
+                    code:res.code
+                  },
+                  header: {
+                    'content-type': 'json'
+                  },
+                  success: function (res) {
+                    console.log(res)
+                    var openid = res.data.openid //返回openid
+                    console.log('openid为' + openid);
+                  }
+                })
+              } else {
+                console.log('登录失败！' + res.errMsg)
+              }
+        },
     })
     // 获取用户信息
     wx.getSetting({

@@ -1,29 +1,17 @@
-<!--pages/card/card.wxml-->
 <page>
-<image id="top-pic" src="../../imgs/card.jpg"></image>
-<form>
-<view id="body">
-<view class="inform"><text>学号</text><input> </input> </view>
-<view class="inform"><text>姓名</text><input> </input> </view>
-<view class="inform"><text>联系电话*</text><input> </input> </view>
-<view class="inform"><text>目前居住地*</text><input> </input> </view>
-<view class="inform"><text>居住地详细地址</text><input> </input> </view>
-<view class="inform"><text>假期是否已离渝</text><picker mode="selector" range="{{a}}" value="1" bindchange="changeText">123</picker> </view>
-<view class="inform"><text>假期是否已离渝</text><picker mode="selector" range="{{a}}" value="1" bindchange="changeText">123</picker> </view>
-<view class="inform"><text>假期是否已离渝</text><picker mode="selector" range="{{a}}" value="1" bindchange="changeText">123</picker> </view>
-<view class="inform"><text>假期是否已离渝</text><picker mode="selector" range="{{a}}" value="1" bindchange="changeText">123</picker> </view>
-<view class="inform"><text>假期是否已离渝</text><picker mode="selector" range="{{a}}" value="1" bindchange="changeText">123</picker> </view>
-<view class="inform"><text>假期是否已离渝</text><picker mode="selector" range="{{a}}" value="1" bindchange="changeText">123</picker> </view>
-<view class="inform"><text>假期是否已离渝</text><picker mode="selector" range="{{a}}" value="1" >123</picker> </view>
-<button id="sub"> 打卡</button>
-
-
-
-</view>
-
-
-</form>
-<!-- <picker mode="selector" range="{{a}}">
-  <button>111</button></picker> -->
+	<image id="top-pic" src="../../imgs/card.jpg"></image>
+	<form>
+		<view id="body">
+			<view class="inform"><text>学号</text><input> </input> </view>
+			<view class="inform"><text>姓名</text><input> </input> </view>
+			<view class="inform"><text>联系电话*</text><input> </input> </view>
+			<view class="inform"><text>目前居住地*</text><input> </input> </view>
+			<view class="inform"><text>居住地详细地址</text><input> </input> </view>
+			<view class="inform" wx:for="{{list}}" wx:for-item="item" wx:for-index="index">
+				{{item.name}}
+				<picker mode="selector" range="{{item.pick}}" bindchange="changeText" value="0" data-operation="{{index}}">{{item.picked}}</picker>
+			</view>
+			<button id="sub"> 打卡</button>
+		</view>
+	</form>
 </page>
-

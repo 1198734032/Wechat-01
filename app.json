@@ -1,9 +1,9 @@
 {
-  "pages":[ 
-     "pages/main/main",
-    "pages/card/card"
-  
-    
+  "pages":[
+    "pages/main/main",
+    "pages/card/card",
+    "pages/text/text",
+    "pages/more/more"
   ],
   "window":{
     "backgroundTextStyle":"dark",
@@ -20,13 +20,13 @@
       "selectedIconPath": "./imgs/home.png"
     },
     {
-      "pagePath": "pages/main/main",
+      "pagePath": "pages/text/text",
       "text": "资讯",
       "iconPath": "./imgs/_text.png",
       "selectedIconPath": "./imgs/text.png"
     },
     {
-      "pagePath": "pages/main/main",
+      "pagePath": "pages/more/more",
       "text": "更多",
       "iconPath": "./imgs/_more.png",
       "selectedIconPath": "./imgs/more.jpg"

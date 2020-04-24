@@ -1,20 +1,13 @@
-// pages/main/main.js
+// pages/more/more.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    checked:[],
-    str_openid:"",
-    code:0
+
   },
- checked:function(e){
-    let checked=e.detail.value
-    this.setData({
-      checked
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
