@@ -1,0 +1,5 @@
+<!--tab/tabs.wxml-->
+<text>tab/tabs.wxml</text>
+<view wx:for="{{listt}}" wx:for-item="item" wx:key="name">
+{{item.name}}
+</view>
